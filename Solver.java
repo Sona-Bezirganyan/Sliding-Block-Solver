@@ -151,7 +151,7 @@ public class Solver {
         Iterator it = currentBoard.getBlocks().iterator();
         while (it.hasNext()) {
             Block current = (Block) it.next();
-            Board updated = currentBoard.moveOneBlock(current, current.oneUp(););
+            Board updated = currentBoard.moveOneBlock(current, current.oneUp());
 
             System.out.println("After attempting to move up, ");
             if (updated != null) {
